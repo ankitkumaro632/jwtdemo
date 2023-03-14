@@ -1,6 +1,5 @@
-package com.example.jwtdemo.config;
+package com.example.jwtdemo.security;
 
-import com.example.jwtdemo.filter.JwtFilter;
 import com.example.jwtdemo.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

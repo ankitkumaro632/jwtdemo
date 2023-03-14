@@ -3,20 +3,25 @@ package com.example.jwtdemo.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@ToString
 @Table(name = "USER_TBL")
-public class User {
+public class UserNew {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String userName;
     private String password;
     private String email;
+    private String phoneNumber;
+    private String dob;
+    private Integer roleId;
+
 }
